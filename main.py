@@ -10,7 +10,7 @@ import jwt
 # pylint: disable=import-error
 from flask import Flask, jsonify, request, abort
 
-
+LOG_LEVEL = os.environ.get('LOG_LEVEL', 'INFO')
 
 
 def _logger():
